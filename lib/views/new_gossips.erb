@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Balance ton ragot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <style>
+    header {
+      padding: 40px;
+
+    }
+    body {background-color: #24445C ;}
+    h1   {color: #FFE4C4;}
+    h4 {color: #FFE4C4;}
+    header a {color: white;}
+    div.gossip {
+      padding: 20px;
+      background-color: #e8e8e8;
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+    p.gossip {
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+    input {
+      border-radius: 5px;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-9">
+            <h1>La boîte à ragot</h1>
+        </div>
+        <div class="col-md-3 header">
+          <a href="/" role="button" class="btn btn-primary CTA">Case d'épart - Acceuil</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <center>
+    <h1>Trouve un ragot</h1>
+    <p>Balance ton ragot</p>
+    <br>
+    <form action='/gossips/new' method='POST'>
+      <h4>
+        Ton potin :
+      </h4>
+      Un petit prénom? :<br/> <input type='text' name='gossip_author'/><br/>
+      <br/>
+      Balance ton ragot :<br/> <textarea name='gossip_content' cols="40" rows="5"/></textarea>
+      <br/>
+      <input class="btn btn-primary" type='submit'/>
+    </form>
+  </center>
+  </section>
+  </body>
+</html>
